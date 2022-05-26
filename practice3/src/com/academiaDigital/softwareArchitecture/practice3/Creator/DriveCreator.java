@@ -5,7 +5,8 @@ import com.academiaDigital.softwareArchitecture.practice3.Files.IFIleOperations;
 public abstract class DriveCreator {
 
     public void getUsers(String fileName){
-        System.out.println("Print all users");
+        IFIleOperations operations = createObject();
+        operations.read(fileName);
     }
     public abstract IFIleOperations createObject();
 }

@@ -10,9 +10,11 @@ public class main {
         DriveCreator creatorCSV = new CSVcreator();
         IFIleOperations csvObject = creatorCSV.createObject();
 
+        creatorCSV.getUsers("c:\\users\\data.csv");
+
         DriveCreator creatorXML = new XMLcreator();
         IFIleOperations xmlObject = creatorXML.createObject();
 
-        creatorCSV.getUsers("c:\\users\\data.csv");
+        creatorXML.getUsers("c:\\users\\data.xml");
     }
 }

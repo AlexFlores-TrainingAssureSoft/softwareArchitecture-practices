@@ -3,7 +3,7 @@ package com.academiaDigital.softwareArchitecture.practice3.Files;
 public class XMLfile implements IFIleOperations{
     @Override
     public void read(String filename) {
-
+        System.out.println("reading users from -> " + filename);
     }
 
     @Override
