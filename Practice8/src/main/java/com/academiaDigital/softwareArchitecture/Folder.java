@@ -15,7 +15,7 @@ public class Folder implements  IPathProvider {
     public String getPath() {
         String pathResult="";
         for (IPathProvider path:files) {
-            pathResult=this.folder+pathResult+path.getPath() + "\n";
+            pathResult+=this.folder +"\n"+ path.getPath()+"\n";
         }
         return pathResult;
     }

@@ -9,6 +9,6 @@ public class File implements IPathProvider{
 
     @Override
     public String getPath() {
-        return path;
+        return " --"+path;
     }
 }
