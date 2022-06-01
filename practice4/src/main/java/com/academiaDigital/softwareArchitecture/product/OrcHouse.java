@@ -2,7 +2,7 @@ package com.academiaDigital.softwareArchitecture.product;
 
 public class OrcHouse implements IRaceHouse{
     @Override
-    public IRace[] getAssignedOrcs() {
-        return new IRace[0];
+    public IRace getAssignedOrcs() {
+        return new Orc();
     }
 }

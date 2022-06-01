@@ -7,22 +7,22 @@ import static org.junit.Assert.*;
 public class HouseTest {
 
     @Test
-    public void getAssignedOrcs_should_return_Orc_array() {
+    public void getAssignedOrcs_should_return_Orc() {
         //Arrange
         IRaceHouse orcHouse = new OrcHouse();
         //Act
-        IRace[] result = orcHouse.getAssignedOrcs();
+        IRace result = orcHouse.getAssignedOrcs();
         //Assert
-        assertEquals(result.length,0);
+        assertNotNull(result);
     }
 
     @Test
-    public void getAssigned_should_return_Elf_array() {
+    public void getAssigned_should_return_Elf() {
         //Arrange
         IRaceHouse elfHouse = new ElfHouse();
         //Act
-        IRace[] result = elfHouse.getAssignedOrcs();
+        IRace result = elfHouse.getAssignedOrcs();
         //Assert
-        assertEquals(result.length,0);
+        assertNotNull(result);
     }
 }

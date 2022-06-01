@@ -11,9 +11,9 @@ public class CityTest {
         //Arrange
             IRaceHouse orcHouse = new OrcHouse();
         //Act
-            IRace[] result = orcHouse.getAssignedOrcs();
+            IRace result = orcHouse.getAssignedOrcs();
         //Assert
-            assertEquals(result.length,0);
+            assertNotNull(result);
     }
 
     @Test
@@ -21,8 +21,8 @@ public class CityTest {
         //Arrange
         IRaceHouse elfHouse = new ElfHouse();
         //Act
-        IRace[] result = elfHouse.getAssignedOrcs();
+        IRace result = elfHouse.getAssignedOrcs();
         //Assert
-        assertEquals(result.length,0);
+        assertNotNull(result);
     }
 }
