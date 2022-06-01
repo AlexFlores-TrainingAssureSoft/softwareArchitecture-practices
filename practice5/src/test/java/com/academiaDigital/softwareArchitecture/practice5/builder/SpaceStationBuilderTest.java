@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class SpaceStationBuilderTest {
 
     @Test
-    public void getSpaceStation() {
+    public void testSpaceStationGetter() {
         //Arrange
         SpaceStationBuilder spaceStationBuilder = new SpaceStationBuilder();
         //Act

@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class EngineTest {
 
     @Test
-    public void getVolume_should_return_volume() {
+    public void testVolumeGetter() {
         //Arrange
         Engine engine = new Engine(10,"Hydrogen");
         //Act
@@ -18,7 +18,7 @@ public class EngineTest {
     }
 
     @Test
-    public void getFuel_should_return_fuel() {
+    public void testFuelGetter() {
         //Arrange
         Engine engine = new Engine(10,"Hydrogen");
         //Act

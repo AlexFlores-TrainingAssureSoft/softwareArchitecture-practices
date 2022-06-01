@@ -16,7 +16,7 @@ public class SpaceStationTest {
         //Act
         int numberOfEnginesTest = spaceStation.getNumberOfEngines();
         //Assert
-        assertEquals(10,numberOfEnginesTest);
+        assertEquals("should return number of engines",10,numberOfEnginesTest);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class SpaceStationTest {
         //Act
         int roomsTest = spaceStation.getRooms();
         //Assert
-        assertEquals(50,roomsTest);
+        assertEquals("should return number of engines",50,roomsTest);
     }
 
     @Test

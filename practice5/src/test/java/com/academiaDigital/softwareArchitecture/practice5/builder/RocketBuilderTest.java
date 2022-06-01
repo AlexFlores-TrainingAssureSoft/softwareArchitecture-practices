@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class RocketBuilderTest {
     @Test
-    public void getRocket() {
+    public void testRocketGetter() {
         //Arrange
         RocketBuilder rocketBuilder = new RocketBuilder();
         //Act
