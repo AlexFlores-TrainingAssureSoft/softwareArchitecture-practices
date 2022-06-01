@@ -12,15 +12,15 @@ public class Logger {
         return logger;
     }
 
-    public void error() {
-        System.out.println("There is a error " + logger.hashCode());
+    public void error(String infoMessage) {
+        System.out.println(infoMessage+ "  " + logger.hashCode());
     }
 
     public void debug() {
         System.out.println("Debugging " + logger.hashCode());
     }
 
-    public void info() {
-        System.out.println("Information " + logger.hashCode());
+    public void info(String infoMessage) {
+        System.out.println(infoMessage + "  " + logger.hashCode());
     }
 }

@@ -6,12 +6,12 @@ public class XmlDriver implements IDriver {
     Logger logger = Logger.getInstance();
     @Override
     public void read(String filename) {
-        logger.error();
+        logger.error("Error message");
         System.out.println("reading users from xml " + filename);
     }
 
     @Override
     public void write(String filename) {
-        logger.error();
+        logger.error("Error message");
     }
 }

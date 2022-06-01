@@ -6,12 +6,12 @@ public class CsvDriver implements IDriver {
     Logger logger = Logger.getInstance();
     @Override
     public void read(String filename) {
-        logger.info();
+        logger.info("Information message");
         System.out.println("reading users from csv " + filename);
     }
 
     @Override
     public void write(String filename) {
-        logger.error();
+        logger.error("Error message");
     }
 }
