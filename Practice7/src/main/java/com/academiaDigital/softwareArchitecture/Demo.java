@@ -10,15 +10,13 @@ import com.academiaDigital.softwareArchitecture.mySQL.MySqlOperations;
 public class Demo {
     public static void main(String[] args) {
         System.out.println("Starting of adapter example");
-        UserInformation userInformation = new UserInformation("Alex","Flores");
-        Borrowing borrowing = new Borrowing("Credit",1221);
-        UserProfile userProfile = new UserProfile(userInformation,borrowing);
+        UserInformation userInformation = new UserInformation("Alex","Flores","Credit",1221);
 
 
         IMySqlOperations mySqlOperations = new MySqlOperations();
         IDynamoDbOperations dynamoDbOperations = new DynamoDbOperations();
         IPersistence persistence = new Persistence(mySqlOperations,dynamoDbOperations);
-        persistence.persistenceInformation(userProfile);
+        persistence.persistenceInformation(userInformation);
 
     }
 }

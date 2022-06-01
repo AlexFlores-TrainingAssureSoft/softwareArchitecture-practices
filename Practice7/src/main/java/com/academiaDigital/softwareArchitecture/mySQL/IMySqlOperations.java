@@ -1,7 +1,7 @@
 package com.academiaDigital.softwareArchitecture.mySQL;
 
-import com.academiaDigital.softwareArchitecture.UserInformation;
+import com.academiaDigital.softwareArchitecture.MySqlDto;
 
 public interface IMySqlOperations {
-    String create(UserInformation userInformation);
+    String create(MySqlDto mySqlDto);
 }

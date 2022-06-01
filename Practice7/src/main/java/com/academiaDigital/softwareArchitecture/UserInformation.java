@@ -1,21 +1,37 @@
 package com.academiaDigital.softwareArchitecture;
 
-public class UserInformation2 {
+public class UserInformation {
     private String name;
     private String lastName;
     private String type;
     private double amount;
 
-    private MysqlDto mysqlDto;
+    private MySqlDto mysqlDto;
     private DynamoDbDto dynamoDbDto;
 
-    public UserInformation2(String name, String lastName, String type, double amount) {
+    public UserInformation(String name, String lastName, String type, double amount) {
         this.name = name;
         this.lastName = lastName;
         this.type = type;
         this.amount = amount;
-        mysqlDto = new MysqlDto(name,lastName);
+        mysqlDto = new MySqlDto(name,lastName);
         dynamoDbDto = new DynamoDbDto(type,amount);
+    }
+
+    public MySqlDto getMysqlDto() {
+        return mysqlDto;
+    }
+
+    public void setMysqlDto(MySqlDto mysqlDto) {
+        this.mysqlDto = mysqlDto;
+    }
+
+    public DynamoDbDto getDynamoDbDto() {
+        return dynamoDbDto;
+    }
+
+    public void setDynamoDbDto(DynamoDbDto dynamoDbDto) {
+        this.dynamoDbDto = dynamoDbDto;
     }
 
     public String getName() {

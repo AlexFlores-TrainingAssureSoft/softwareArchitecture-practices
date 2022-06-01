@@ -1,8 +1,6 @@
 package com.academiaDigital.softwareArchitecture.adapter;
 
-import com.academiaDigital.softwareArchitecture.Borrowing;
 import com.academiaDigital.softwareArchitecture.UserInformation;
-import com.academiaDigital.softwareArchitecture.UserProfile;
 import com.academiaDigital.softwareArchitecture.dynamoDB.IDynamoDbOperations;
 import com.academiaDigital.softwareArchitecture.mySQL.IMySqlOperations;
 
@@ -16,8 +14,8 @@ public class Persistence implements IPersistence{
     }
 
     @Override
-    public void persistenceInformation(UserProfile userProfile) {
-        System.out.println(mySqlOperations.create(userProfile.getUserInformation()));
-        System.out.println(dynamoDbOperations.create(userProfile.getBorrowing()));
+    public void persistenceInformation(UserInformation userInformation) {
+        System.out.println(mySqlOperations.create(userInformation.getMysqlDto()));
+        System.out.println(dynamoDbOperations.create(userInformation.getDynamoDbDto()));
     }
 }
