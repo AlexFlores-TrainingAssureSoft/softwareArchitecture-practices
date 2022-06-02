@@ -1,10 +1,10 @@
-package com.academiaDigital.softwareArchitecture.practice13;
+package com.academiaDigital.softwareArchitecture.practice13.verifiers;
 
 import com.academiaDigital.softwareArchitecture.practice13.text.Information;
 
 import java.util.List;
 
 public interface IVerifier {
-    List<Information> verifier(List<Information> information);
+    List<Information> validate(List<Information> information);
     void setNext(IVerifier verifier);
 }
