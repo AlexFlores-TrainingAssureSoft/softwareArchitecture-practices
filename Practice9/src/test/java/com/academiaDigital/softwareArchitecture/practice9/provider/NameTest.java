@@ -9,7 +9,7 @@ public class NameTest {
     @Test
     public void getName_should_return_string() {
         //Arrange
-        Name name = new Name("JOE", Preferences.LIGHT_MODE);
+        Name name = new Name("JOE");
         //Act
         String result = name.getName();
         //Assert

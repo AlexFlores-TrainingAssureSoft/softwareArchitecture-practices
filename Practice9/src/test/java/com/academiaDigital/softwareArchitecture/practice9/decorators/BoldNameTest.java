@@ -1,12 +1,11 @@
 package com.academiaDigital.softwareArchitecture.practice9.decorators;
 
 import com.academiaDigital.softwareArchitecture.practice9.provider.Name;
-import com.academiaDigital.softwareArchitecture.practice9.provider.Preferences;
 
 import static org.junit.Assert.*;
 
 public class BoldNameTest {
-    public Name name = new Name("JOE", Preferences.LIGHT_MODE);
+    public Name name = new Name("JOE");
     @org.junit.Test
     public void getName_should_return_string() {
         //Arrange
